@@ -95,7 +95,6 @@ TEST(Particle, update)
     {
         p.update();
         p.render();
-
     }
     EXPECT_FLOAT_EQ(p.getPosition().y, 0.0f);
 }
