@@ -120,13 +120,13 @@ TEST(Vec3, equals)
     EXPECT_TRUE(a==b);
 }
 
-
+/*
 TEST(Emitter, defaultCtor)
 {
     Emitter e;
     EXPECT_TRUE(e.getNumParticles() == 0);
 }
-
+*/
 
 TEST(Emitter, userCtor)
 {

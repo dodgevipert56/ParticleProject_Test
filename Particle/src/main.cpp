@@ -17,11 +17,7 @@ int main()
     }
 }
 
-
-
-
 /*
-
 bool simulation = true;
 int i = 0;
 

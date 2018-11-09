@@ -21,9 +21,8 @@ public:
     size_t getMaxLife() const;
     Vec3 getDirection() const;
     void setLife(size_t _life);
-    int getAddLife() const;
-    void setAddLife(int _aLife);
-
+    //int getAddLife() const;
+    //void setAddLife(int _aLife);
 
     Vec3 getColour() const;
     void setColour(const Vec3 &_colour);
@@ -32,8 +31,6 @@ public:
     void update();
     void render() const;
     void reset();
-
-
 
 private:
     Vec3 m_position;
