@@ -17,7 +17,6 @@ Emitter::Emitter(const Vec3 &_pos, size_t _numParticles)
     std::uniform_real_distribution<float> dis(-1.0f, 1.0f);
     std::uniform_int_distribution<size_t> life(5, 1000);
 
-
     for(size_t i =0; i<_numParticles; ++i)
     {
         m_particles.push_back(Particle(_pos, Vec3(dis(gen), dis(gen), dis(gen)), life(gen)));

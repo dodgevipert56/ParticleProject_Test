@@ -3,6 +3,7 @@
 
 struct Vec3
 {
+
     Vec3() = default; // default ctor
     Vec3(const Vec3 &) = default; // default copy ctor
     Vec3(float _x, float _y, float _z) : x(_x), y(_y), z(_z){} //user defined ctor
@@ -27,6 +28,7 @@ struct Vec3
     float x = 0.0f;
     float y = 0.0f;
     float z = 0.0f;
+
 };
 
 #endif

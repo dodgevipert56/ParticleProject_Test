@@ -10,7 +10,7 @@ int main()
     //p.setAddLife(1);
 
     //while (true)
-    for(size_t i = 0; i<1000; ++i)
+    for(size_t i = 0; i<50; ++i)
     {
         e.render();
         e.update();

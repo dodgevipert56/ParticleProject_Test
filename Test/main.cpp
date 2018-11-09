@@ -97,7 +97,7 @@ TEST(Particle, update)
         p.render();
 
     }
-    EXPECT_FLOAT_EQ(p.getPosition().y, 10.0f);
+    EXPECT_FLOAT_EQ(p.getPosition().y, 0.0f);
 }
 
 //TEST()
@@ -120,13 +120,13 @@ TEST(Vec3, equals)
     EXPECT_TRUE(a==b);
 }
 
-/*
+
 TEST(Emitter, defaultCtor)
 {
     Emitter e;
     EXPECT_TRUE(e.getNumParticles() == 0);
 }
-*/
+
 
 TEST(Emitter, userCtor)
 {
@@ -157,6 +157,3 @@ TEST(Particle, reset)
     std::cout<<pos.y<<'\n';
     EXPECT_TRUE(p.getPosition() == Vec3(0.0f, 0.0f, 0.0f));
 }
-
-
-

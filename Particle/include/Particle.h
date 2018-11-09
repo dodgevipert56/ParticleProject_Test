@@ -17,17 +17,19 @@ public:
     Particle (const Vec3 &_pos); // next time TBC!!
     Vec3 getPosition() const;
     void setPosition(const Vec3 &_pos);
+
+    Vec3 getDirection() const;
+    void setDirection(const Vec3 &_dir);
+
     size_t getLife() const;
     size_t getMaxLife() const;
-    Vec3 getDirection() const;
     void setLife(size_t _life);
     //int getAddLife() const;
     //void setAddLife(int _aLife);
 
     Vec3 getColour() const;
     void setColour(const Vec3 &_colour);
-    //Vec3 getDirection() const; //remove this
-    void setDirection(const Vec3 &_dir);
+
     void update();
     void render() const;
     void reset();
@@ -35,7 +37,7 @@ public:
 private:
     Vec3 m_position;
     Vec3 m_dir;
-    Vec3 m_colour = {0.5f, 0.5f, 0.5f};
+    Vec3 m_colour = {0.0f, 0.0f, 0.0f};
     size_t m_life = 0;
     size_t m_maxLife;
 

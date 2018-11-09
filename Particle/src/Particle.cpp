@@ -66,20 +66,20 @@ void Particle::setDirection(const Vec3 &_dir)
     m_dir = _dir;
 }
 
-
+/*
 void Particle::reset()
 {
-/*
+
     m_position.x = 0;
     m_position.y = 0;
     m_position.z = 0;
 
     m_life = 0;
-*/
+
     setPosition({0,0,0});  // {} because its a vector
     setLife(0);
 }
-
+*/
 
 void Particle::update()
 {
